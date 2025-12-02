@@ -7,6 +7,7 @@ import Method from './components/Method';
 import SocialProof from './components/SocialProof';
 import TargetAudience from './components/TargetAudience';
 import Modules from './components/Modules';
+import AboutMe from './components/AboutMe';
 import Bonuses from './components/Bonuses';
 import Guarantee from './components/Guarantee';
 import Offer from './components/Offer';
@@ -24,6 +25,7 @@ const App: React.FC = () => {
       <SocialProof />
       <TargetAudience />
       <Modules />
+      <AboutMe />
       <Bonuses />
       <Guarantee />
       <Offer />
