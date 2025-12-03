@@ -7,14 +7,14 @@ const AboutMe: React.FC = () => {
       <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col md:flex-row items-center gap-12">
           
-          {/* Image Placeholder / Column */}
+          {/* Image Column */}
           <div className="w-full md:w-1/3 flex flex-col items-center">
             <div className="w-64 h-64 md:w-full md:h-96 bg-slate-200 rounded-2xl overflow-hidden shadow-2xl border-4 border-white relative mb-6">
-              {/* Note: Replace the src below with the real photo of Guilherme Zampoli */}
-              <div className="w-full h-full bg-gradient-to-br from-slate-300 to-slate-400 flex items-center justify-center text-slate-500">
-                 <User className="w-24 h-24 opacity-50" />
-                 <span className="absolute bottom-4 text-xs font-bold uppercase tracking-widest opacity-60">Foto do Guilherme</span>
-              </div>
+               <img 
+                src="https://postimg.cc/6yPJsD5M" 
+                alt="Guilherme Zampoli" 
+                className="w-full h-full object-cover"
+               />
             </div>
             
             <div className="flex gap-4 w-full justify-center">

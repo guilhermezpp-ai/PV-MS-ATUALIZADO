@@ -15,11 +15,11 @@ const Offer: React.FC = () => {
           <div className="p-8 md:p-12">
             <div className="flex flex-col items-center mb-8 bg-slate-50 p-6 rounded-xl border border-slate-100">
               <span className="text-slate-400 font-medium text-lg mb-1">Valor Total: <span className="line-through text-red-400">R$ 1.044,00</span></span>
-              <div className="text-5xl md:text-6xl font-extrabold text-green-600 my-2 tracking-tight">
-                <span className="text-xl md:text-2xl font-medium text-slate-500 mr-2 align-middle">por apenas</span>
-                R$ 97
+              <div className="text-4xl md:text-6xl font-extrabold text-green-600 my-2 tracking-tight">
+                <span className="text-lg md:text-2xl font-medium text-slate-500 mr-2 align-middle">por apenas</span>
+                R$ 297,47 <span className="text-lg font-medium text-slate-500">à vista</span>
               </div>
-              <span className="text-slate-500 font-medium bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm mt-2">ou 12x de R$ 9,70</span>
+              <span className="text-slate-500 font-medium bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm mt-2">ou 10x de R$ 35,75</span>
             </div>
 
             <div className="space-y-4 mb-10 max-w-lg mx-auto">
@@ -54,7 +54,11 @@ const Offer: React.FC = () => {
               </div>
             </div>
 
-            <Button fullWidth className="animate-pulse hover:animate-none shadow-xl shadow-green-200">
+            <Button 
+              fullWidth 
+              className="animate-pulse hover:animate-none shadow-xl shadow-green-200"
+              href="https://pay.hotmart.com/T99113739F"
+            >
               QUERO CONQUISTAR CLIENTES AGORA
             </Button>
             
