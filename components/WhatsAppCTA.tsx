@@ -18,7 +18,9 @@ const WhatsAppCTA: React.FC = () => {
         </p>
         
         <a
-            href="#" 
+            href="https://wa.me/5541997477760?text=Oi%2C+tenho+dúvidas+sobre+o+Manual+de+Sobrevivência"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full transition-all shadow-lg hover:shadow-green-500/30 hover:-translate-y-1"
         >
             <MessageCircle className="w-6 h-6" />
