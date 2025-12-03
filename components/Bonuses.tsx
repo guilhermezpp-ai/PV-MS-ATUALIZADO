@@ -2,24 +2,24 @@ import React from 'react';
 import { Gift } from 'lucide-react';
 import Button from './Button';
 
-const Bonuses: React.FC = () => {
-  const bonuses = [
-    {
-      id: 1,
-      label: "PRESENTE #1",
-      title: "Mapeamento Comportamental (DISC)",
-      desc: "Descubra como seu perfil influencia sua forma de vender e atender.",
-      value: "R$ 250,00"
-    },
-    {
-      id: 2,
-      label: "PRESENTE #2",
-      title: "Sessão de Orientação Estratégica",
-      desc: "Uma sessão AO VIVO e INDIVIDUAL (que é uma sessão de coaching) para destravar suas vendas.",
-      value: "R$ 497,00"
-    }
-  ];
+const bonuses = [
+  {
+    id: 1,
+    label: "PRESENTE #1",
+    title: "Mapeamento Comportamental (DISC)",
+    desc: "Descubra como seu perfil influencia sua forma de vender e atender.",
+    value: "R$ 250,00"
+  },
+  {
+    id: 2,
+    label: "PRESENTE #2",
+    title: "Sessão de Orientação Estratégica",
+    desc: "Uma sessão AO VIVO e INDIVIDUAL (que é uma sessão de coaching) para destravar suas vendas.",
+    value: "R$ 497,00"
+  }
+];
 
+const Bonuses: React.FC = () => {
   return (
     <section className="py-20 bg-slate-900 text-white px-4">
       <div className="container mx-auto max-w-5xl">

@@ -2,30 +2,30 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { UserX, MessageSquareWarning, SearchX, HelpCircle, Frown } from 'lucide-react';
 
-const PainPoints: React.FC = () => {
-  const pains = [
-    {
-      icon: <MessageSquareWarning className="w-8 h-8 text-red-500" />,
-      text: "Fica nervoso quando precisa falar do seu serviço."
-    },
-    {
-      icon: <UserX className="w-8 h-8 text-red-500" />,
-      text: "Tem medo de parecer insistente e ser rejeitado."
-    },
-    {
-      icon: <Frown className="w-8 h-8 text-red-500" />,
-      text: "Sabe entregar resultado, mas não sabe se vender."
-    },
-    {
-      icon: <SearchX className="w-8 h-8 text-red-500" />,
-      text: "Depende de indicação e nunca sabe quando será o próximo cliente."
-    },
-    {
-      icon: <HelpCircle className="w-8 h-8 text-red-500" />,
-      text: "Recebe “depois eu te aviso” e não sabe como responder."
-    }
-  ];
+const pains = [
+  {
+    icon: <MessageSquareWarning className="w-8 h-8 text-red-500" />,
+    text: "Fica nervoso quando precisa falar do seu serviço."
+  },
+  {
+    icon: <UserX className="w-8 h-8 text-red-500" />,
+    text: "Tem medo de parecer insistente e ser rejeitado."
+  },
+  {
+    icon: <Frown className="w-8 h-8 text-red-500" />,
+    text: "Sabe entregar resultado, mas não sabe se vender."
+  },
+  {
+    icon: <SearchX className="w-8 h-8 text-red-500" />,
+    text: "Depende de indicação e nunca sabe quando será o próximo cliente."
+  },
+  {
+    icon: <HelpCircle className="w-8 h-8 text-red-500" />,
+    text: "Recebe “depois eu te aviso” e não sabe como responder."
+  }
+];
 
+const PainPoints: React.FC = () => {
   return (
     <section className="py-20 bg-slate-50 px-4">
       <div className="container mx-auto max-w-5xl">

@@ -1,29 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TrendingUp, Newspaper, AlertCircle, ExternalLink } from 'lucide-react';
+import { Newspaper, AlertCircle, ExternalLink } from 'lucide-react';
+
+const news = [
+  {
+    source: "Gazeta do Mercado",
+    date: "Há 2 dias",
+    headline: "80% dos autônomos desistem no primeiro ano por falta de clientes, aponta estudo.",
+    category: "Mercado"
+  },
+  {
+    source: "Jornal Negócios em Foco",
+    date: "Semana passada",
+    headline: "O fim da era do 'boca a boca': profissionais que não usam técnicas de vendas ativas estão perdendo 60% da receita.",
+    category: "Negócios"
+  },
+  {
+    source: "Revista Avanço Profissional",
+    date: "Ontem",
+    headline: "Habilidade de vendas supera competência técnica como o fator nº 1 para o sucesso de profissionais em 2025.",
+    category: "Tendência"
+  }
+];
 
 const SocialProof: React.FC = () => {
-  const news = [
-    {
-      source: "Gazeta do Mercado",
-      date: "Há 2 dias",
-      headline: "80% dos autônomos desistem no primeiro ano por falta de clientes, aponta estudo.",
-      category: "Mercado"
-    },
-    {
-      source: "Jornal Negócios em Foco",
-      date: "Semana passada",
-      headline: "O fim da era do 'boca a boca': profissionais que não usam técnicas de vendas ativas estão perdendo 60% da receita.",
-      category: "Negócios"
-    },
-    {
-      source: "Revista Avanço Profissional",
-      date: "Ontem",
-      headline: "Habilidade de vendas supera competência técnica como o fator nº 1 para o sucesso de profissionais em 2025.",
-      category: "Tendência"
-    }
-  ];
-
   return (
     <section className="py-20 bg-slate-100 border-y border-slate-200">
       <div className="container mx-auto max-w-5xl px-4">

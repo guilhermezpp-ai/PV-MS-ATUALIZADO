@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, TrendingUp, User } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 const AboutMe: React.FC = () => {
   return (
@@ -14,6 +14,7 @@ const AboutMe: React.FC = () => {
                 src="https://i.postimg.cc/vZYQnyRw/IMG-4119.jpg" 
                 alt="Guilherme Zampoli" 
                 className="w-full h-full object-cover"
+                loading="lazy"
                />
             </div>
             

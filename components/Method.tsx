@@ -2,40 +2,40 @@ import React from 'react';
 import { Brain, ShieldAlert, Map, Handshake, Infinity } from 'lucide-react';
 import Button from './Button';
 
-const Method: React.FC = () => {
-  const steps = [
-    {
-      phase: "Fase 1",
-      title: "FUNDAMENTOS DA CONFIANÇA",
-      desc: "Esqueça a ideia de que vender é um dom. Aqui você vai instalar o 'sistema operacional' da confiança e dominar as regras do jogo que tiram todo o peso das suas costas na hora de ofertar.",
-      icon: <Brain className="w-6 h-6" />
-    },
-    {
-      phase: "Fase 2",
-      title: "EXTERMÍNIO DOS SABOTADORES",
-      desc: "Vamos silenciar a voz da Síndrome do Impostor. Descubra exatamente quais travas invisíveis estão matando seu faturamento hoje e aprenda a eliminá-las pela raiz para agir sem medo.",
-      icon: <ShieldAlert className="w-6 h-6" />
-    },
-    {
-      phase: "Fase 3",
-      title: "MAPEAMENTO DO TERRENO",
-      desc: "O fim da venda forçada. Aprenda a atrair os clientes certos e a conduzir conversas tão naturais e envolventes que a oferta final parecerá a única conclusão lógica (e o cliente agradecerá por isso).",
-      icon: <Map className="w-6 h-6" />
-    },
-    {
-      phase: "Fase 4",
-      title: "FECHAMENTO NA PRÁTICA",
-      desc: "A cura definitiva para o medo de falar o preço. Domine técnicas elegantes para transformar um 'vou pensar' em dinheiro no bolso, sem gaguejar e sem parecer desesperado por uma venda.",
-      icon: <Handshake className="w-6 h-6" />
-    },
-    {
-      phase: "Fase 5",
-      title: "FLUXO CONTÍNUO",
-      desc: "A arte de fazer o acompanhamento (follow-up) sem ser o 'chato do WhatsApp'. Crie um ciclo virtuoso onde clientes compram, voltam, compram de novo e ainda trazem os amigos.",
-      icon: <Infinity className="w-6 h-6" />
-    }
-  ];
+const steps = [
+  {
+    phase: "Fase 1",
+    title: "FUNDAMENTOS DA CONFIANÇA",
+    desc: "Esqueça a ideia de que vender é um dom. Aqui você vai instalar o 'sistema operacional' da confiança e dominar as regras do jogo que tiram todo o peso das suas costas na hora de ofertar.",
+    icon: <Brain className="w-6 h-6" />
+  },
+  {
+    phase: "Fase 2",
+    title: "EXTERMÍNIO DOS SABOTADORES",
+    desc: "Vamos silenciar a voz da Síndrome do Impostor. Descubra exatamente quais travas invisíveis estão matando seu faturamento hoje e aprenda a eliminá-las pela raiz para agir sem medo.",
+    icon: <ShieldAlert className="w-6 h-6" />
+  },
+  {
+    phase: "Fase 3",
+    title: "MAPEAMENTO DO TERRENO",
+    desc: "O fim da venda forçada. Aprenda a atrair os clientes certos e a conduzir conversas tão naturais e envolventes que a oferta final parecerá a única conclusão lógica (e o cliente agradecerá por isso).",
+    icon: <Map className="w-6 h-6" />
+  },
+  {
+    phase: "Fase 4",
+    title: "FECHAMENTO NA PRÁTICA",
+    desc: "A cura definitiva para o medo de falar o preço. Domine técnicas elegantes para transformar um 'vou pensar' em dinheiro no bolso, sem gaguejar e sem parecer desesperado por uma venda.",
+    icon: <Handshake className="w-6 h-6" />
+  },
+  {
+    phase: "Fase 5",
+    title: "FLUXO CONTÍNUO",
+    desc: "A arte de fazer o acompanhamento (follow-up) sem ser o 'chato do WhatsApp'. Crie um ciclo virtuoso onde clientes compram, voltam, compram de novo e ainda trazem os amigos.",
+    icon: <Infinity className="w-6 h-6" />
+  }
+];
 
+const Method: React.FC = () => {
   return (
     <section className="py-20 bg-slate-50 px-4">
       <div className="container mx-auto max-w-4xl">
