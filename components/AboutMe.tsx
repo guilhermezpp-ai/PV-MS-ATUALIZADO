@@ -11,7 +11,7 @@ const AboutMe: React.FC = () => {
           <div className="w-full md:w-1/3 flex flex-col items-center">
             <div className="w-64 h-64 md:w-full md:h-96 bg-slate-200 rounded-2xl overflow-hidden shadow-2xl border-4 border-white relative mb-6">
                <img 
-                src="https://postimg.cc/6yPJsD5M" 
+                src="https://i.postimg.cc/vZYQnyRw/IMG-4119.jpg" 
                 alt="Guilherme Zampoli" 
                 className="w-full h-full object-cover"
                />
