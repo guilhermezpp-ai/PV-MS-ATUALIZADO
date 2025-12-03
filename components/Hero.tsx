@@ -2,12 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Button from './Button';
 import { ShieldCheck, Zap, CheckCircle2, MessageCircle, PlayCircle } from 'lucide-react';
+import YouTubeEmbed from './YouTubeEmbed';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative bg-gradient-to-b from-slate-900 to-slate-800 text-white pt-12 pb-20 md:pt-24 md:pb-32 px-4 overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+      {/* Background Elements - Rendered purely via CSS now, optimized */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 -left-24 w-72 h-72 bg-purple-500 rounded-full blur-3xl"></div>
       </div>
@@ -30,7 +31,7 @@ const Hero: React.FC = () => {
             Um método irresistível que transforma qualquer iniciante em alguém capaz de conversar com segurança, despertar interesse e fechar seus primeiros clientes.
           </p>
 
-          {/* Chamada para a Aula Gratuita (Simple List Style) */}
+          {/* Chamada para a Aula Gratuita */}
           <div className="bg-slate-900/80 border border-slate-700/50 rounded-2xl p-6 md:p-8 max-w-3xl mx-auto mb-10 shadow-2xl backdrop-blur-md text-left">
             <div className="flex items-center gap-3 mb-6 border-b border-slate-700/50 pb-4">
               <div className="bg-amber-500/10 p-2 rounded-full">
@@ -67,18 +68,14 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* VSL (Video Sales Letter) Container */}
+          {/* VSL (Video Sales Letter) Container Optimized */}
           <div className="relative w-full max-w-4xl mx-auto aspect-video bg-slate-950 rounded-xl shadow-2xl overflow-hidden border-4 border-slate-700/50 mb-10 group">
-             {/* Glow effect behind video */}
+             {/* Glow effect */}
              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-green-600 rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-            <iframe 
-              className="relative inset-0 w-full h-full z-10"
-              src="https://www.youtube.com/embed/HdDJFRbNbX4?rel=0&modestbranding=1" 
-              title="Manual de Sobrevivência - Vídeo de Vendas"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowFullScreen
-            ></iframe>
+             {/* Optimized Embed Component */}
+             <div className="relative z-10 w-full h-full">
+                <YouTubeEmbed videoId="HdDJFRbNbX4" title="Manual de Sobrevivência - Vídeo de Vendas" />
+             </div>
           </div>
 
           <div className="flex flex-col items-center gap-8">

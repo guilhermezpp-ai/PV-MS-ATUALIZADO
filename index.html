@@ -6,91 +6,46 @@
     <title>Manual de Sobrevivência</title>
     <meta name="description" content="Aprenda a conquistar seus primeiros clientes mesmo sendo tímido, inseguro ou iniciante em vendas." />
 
-    <!-- 1. DNS Prefetch: Resolve IPs antecipadamente -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="dns-prefetch" href="//esm.sh">
-    <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
-    <link rel="dns-prefetch" href="//i.postimg.cc">
-    <link rel="dns-prefetch" href="//www.youtube.com">
-
-    <!-- 2. Preconnect: Estabelece conexão segura antecipada (Handshake SSL) -->
-    <!-- Crítico para Google Fonts: reduz latência do download da fonte -->
+    <!-- 1. Preconnect Inteligente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://esm.sh" crossorigin>
-    <link rel="preconnect" href="https://i.postimg.cc" crossorigin>
-    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
-
-    <!-- 3. CSS Crítico Inline (Above the Fold) -->
-    <style>
-      /* Estilos base imediatos para evitar layout shift e tela branca */
-      body {
-        margin: 0;
-        padding: 0;
-        /* Fonte Otimizada: Inter > System Fonts > Generic */
-        font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        background-color: #0f172a; /* slate-900 */
-        color: #f8fafc; /* slate-50 */
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      #root {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      /* Reset crítico para evitar CLS em imagens antes do CSS carregar */
-      img, video {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
-
-    <!-- 4. Preload e Carregamento Assíncrono da Fonte -->
-    <!-- 'display=swap' garante que o texto apareça com fonte de sistema até a Inter carregar -->
+    
+    <!-- 2. Fontes -->
     <link 
-      rel="preload" 
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" 
-      as="style" 
-      onload="this.onload=null;this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" 
+      rel="stylesheet"
     >
-    <noscript>
-      <link 
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" 
-        rel="stylesheet" 
-        type="text/css" 
-      />
-    </noscript>
 
-    <!-- Tailwind CSS (Runtime) - Defer para não bloquear renderização inicial -->
-    <script src="https://cdn.tailwindcss.com" defer></script>
+    <!-- 3. Tailwind CSS Engine (CDN) - Essencial para o layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              // Configuração exata do fallback no Tailwind para consistência
-              sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
+              sans: ['Inter', 'sans-serif'],
             },
             colors: {
               brand: {
-                dark: '#0f172a', // Slate 900
-                primary: '#1e40af', // Blue 800
-                accent: '#f59e0b', // Amber 500
-                light: '#f8fafc', // Slate 50
+                dark: '#0f172a',
+                primary: '#1e40af',
+                accent: '#f59e0b',
+                light: '#f8fafc',
               }
+            },
+            animation: {
+              'spin-slow': 'spin 10s linear infinite',
             }
           }
         }
       }
     </script>
 
-    <!-- ImportMap Otimizado (ESM.sh) -->
-    <!-- CORREÇÃO: Usando apenas versões consistentes do React 18 para evitar conflitos -->
+    <!-- 4. CSS Customizado -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- 5. ImportMap React -->
     <script type="importmap">
 {
   "imports": {
@@ -105,9 +60,22 @@
   }
 }
 </script>
+    
+    <!-- Estilos Críticos -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0f172a; /* Evita flash branco */
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Reset para imagens */
+      img, video { max-width: 100%; height: auto; display: block; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <script type="module" src="./index.tsx" defer></script>
   </body>
 </html>

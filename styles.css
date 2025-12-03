@@ -1,0 +1,22 @@
+/* 
+   Como estamos usando Tailwind via CDN, não usamos as diretivas @tailwind aqui.
+   Apenas CSS puro complementar se necessário.
+*/
+
+.animate-spin-slow {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Scrollbar suave para toda a página */
+html {
+  scroll-behavior: smooth;
+}
