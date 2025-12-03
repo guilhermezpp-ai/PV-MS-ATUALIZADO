@@ -13,6 +13,8 @@ const AboutMe: React.FC = () => {
                <img 
                 src="https://i.postimg.cc/vZYQnyRw/IMG-4119.jpg" 
                 alt="Guilherme Zampoli" 
+                width="400"
+                height="533"
                 className="w-full h-full object-cover"
                 loading="lazy"
                />
