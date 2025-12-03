@@ -43,6 +43,11 @@
       html {
         scroll-behavior: smooth;
       }
+      /* Reset crítico para evitar CLS em imagens antes do CSS carregar */
+      img, video {
+        max-width: 100%;
+        height: auto;
+      }
     </style>
 
     <!-- 4. Preload e Carregamento Assíncrono da Fonte -->
@@ -85,6 +90,7 @@
     </script>
 
     <!-- ImportMap Otimizado (ESM.sh) -->
+    <!-- CORREÇÃO: Usando apenas versões consistentes do React 18 para evitar conflitos -->
     <script type="importmap">
 {
   "imports": {

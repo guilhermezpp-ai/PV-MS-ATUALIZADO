@@ -75,8 +75,7 @@ const Hero: React.FC = () => {
               className="relative inset-0 w-full h-full z-10"
               src="https://www.youtube.com/embed/HdDJFRbNbX4?rel=0&modestbranding=1" 
               title="Manual de Sobrevivência - Vídeo de Vendas"
-              frameBorder="0" 
-              loading="lazy"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowFullScreen
             ></iframe>
