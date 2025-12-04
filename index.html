@@ -85,7 +85,7 @@
       }
     </script>
 
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code (Script Part) -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -98,9 +98,6 @@
     fbq('init', '1203099945066371');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1203099945066371&amp;ev=PageView&amp;noscript=1"
-    /></noscript>
     <!-- End Meta Pixel Code -->
 <script type="importmap">
 {
@@ -117,6 +114,11 @@
 </script>
 </head>
   <body>
+    <!-- Meta Pixel Code (NoScript Part) - Moved to body for valid HTML parsing -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1203099945066371&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+    
     <div id="root"></div>
     <!-- Entry point do Vite -->
     <script type="module" src="/index.tsx"></script>
