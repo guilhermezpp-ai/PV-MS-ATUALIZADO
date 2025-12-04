@@ -6,19 +6,26 @@
     <title>Manual de Sobrevivência</title>
     <meta name="description" content="Aprenda a conquistar seus primeiros clientes mesmo sendo tímido, inseguro ou iniciante em vendas." />
 
-    <!-- 1. Preconnect Inteligente -->
+    <!-- 1. Preconnect para Fontes (Conexão Antecipada) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://esm.sh" crossorigin>
-    
-    <!-- 2. CSS Crítico Inline (Above the Fold) 
-         Simula os estilos da Hero Section para renderização imediata -->
+
+    <!-- 2. Preload do CSS da Fonte (Alta Prioridade) -->
+    <link 
+      rel="preload" 
+      as="style" 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    >
+
+    <!-- 3. CSS Crítico Inline (Above the Fold) -->
     <style>
       :root {
         --bg-slate-900: #0f172a;
         --bg-slate-800: #1e293b;
         --text-white: #ffffff;
-        --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        /* Stack de fontes otimizada: Inter + Fontes Nativas do Sistema */
+        --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       }
 
       /* Reset básico crítico */
@@ -32,16 +39,17 @@
       body {
         margin: 0;
         padding: 0;
-        /* Garante que o fundo seja escuro imediatamente (LCP Otimizado) */
         background-color: var(--bg-slate-900);
         background-image: linear-gradient(to bottom, var(--bg-slate-900), var(--bg-slate-800));
         color: var(--text-white);
         font-family: var(--font-sans);
         -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
         line-height: 1.5;
       }
 
-      /* Previne Layout Shift (CLS) em mídias */
+      /* Previne Layout Shift (CLS) */
       img, video, iframe, svg {
         display: block;
         vertical-align: middle;
@@ -49,7 +57,6 @@
         height: auto;
       }
 
-      /* Garante altura mínima para o app */
       #root {
         display: flex;
         flex-direction: column;
@@ -57,20 +64,20 @@
       }
     </style>
 
-    <!-- 3. Fontes Otimizadas -->
+    <!-- 4. Carregamento da Fonte (com display=swap) -->
     <link 
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" 
       rel="stylesheet"
     >
 
-    <!-- 4. Tailwind CSS Engine (CDN) - Mantido para fidelidade do layout -->
+    <!-- 5. Tailwind CSS Engine (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
             },
             colors: {
               brand: {
@@ -88,7 +95,7 @@
       }
     </script>
 
-    <!-- 5. CSS Assíncrono (Styles.css) -->
+    <!-- 6. CSS Assíncrono -->
     <link 
       rel="preload" 
       as="style" 
@@ -99,7 +106,7 @@
       <link rel="stylesheet" href="./styles.css">
     </noscript>
 
-    <!-- 6. ImportMap React -->
+    <!-- 7. ImportMap React -->
     <script type="importmap">
 {
   "imports": {
