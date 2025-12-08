@@ -57,7 +57,7 @@ const Offer: React.FC = () => {
             <Button 
               fullWidth 
               className="animate-pulse hover:animate-none shadow-xl shadow-green-200"
-              href="https://pay.hotmart.com/T99113739F"
+              href="https://pay.hotmart.com/T99113739F?checkoutMode=10"
             >
               QUERO CONQUISTAR CLIENTES AGORA
             </Button>
