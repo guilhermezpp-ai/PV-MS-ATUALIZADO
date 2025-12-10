@@ -5,6 +5,7 @@ import TheVillain from './components/TheVillain';
 import Solution from './components/Solution';
 import Method from './components/Method';
 import SocialProof from './components/SocialProof';
+import Testimonials from './components/Testimonials';
 import TargetAudience from './components/TargetAudience';
 import Modules from './components/Modules';
 import AboutMe from './components/AboutMe';
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       <Solution />
       <Method />
       <SocialProof />
+      <Testimonials />
       <TargetAudience />
       <Modules />
       <AboutMe />
