@@ -17,9 +17,9 @@ const Offer: React.FC = () => {
               <span className="text-slate-400 font-medium text-lg mb-1">Valor Total: <span className="line-through text-red-400">R$ 1.044,00</span></span>
               <div className="text-4xl md:text-6xl font-extrabold text-green-600 my-2 tracking-tight">
                 <span className="text-lg md:text-2xl font-medium text-slate-500 mr-2 align-middle">por apenas</span>
-                R$ 297,47 <span className="text-lg font-medium text-slate-500">à vista</span>
+                R$ 47,97 <span className="text-lg font-medium text-slate-500">à vista</span>
               </div>
-              <span className="text-slate-500 font-medium bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm mt-2">ou 10x de R$ 35,75</span>
+              <span className="text-slate-500 font-medium bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm mt-2">ou 6x de R$ 9,00</span>
             </div>
 
             <div className="space-y-4 mb-10 max-w-lg mx-auto">
